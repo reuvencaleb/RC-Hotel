@@ -1,0 +1,347 @@
+/* Reset dan global styling */
+/* mengatur ulang margin dan padding semua elemen agar konsisten */
+/* menggunakan font default yang mudah dibaca */
+/* memberi jarak antar teks agar lebih nyaman dibaca */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7em;
+}
+/* membatasi maximal lebar agar lebih responsif */
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow: auto; /* membatasi masalah tampilan saat ada elemen yang lebih besar dari kontainernya */
+}
+
+.primary-text {
+	color: #f7c08a; /* menentukan warna utama yaitu #f7c08a atau peach untuk teks tertentu agar lebih seragam*/
+}
+
+/* Mengatur tampilan tombol lebih rapi dan menarik. */
+.btn {
+	width: 190px;
+	height: 50px;
+	display: block; /* Membuat tombol memenuhi lebar parent-nya.*/
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.1em;
+	padding: 12px 10px 10px 10px;
+	cursor: pointer; /* mengubah kursor jadi tangan saat dihover */
+}
+
+/* Home Page Styling */
+#navbar {
+	background: #202040; /*Menjadikan navbar berwarna navy gelap */
+	overflow: auto; /*Menghindari elemen yang overflow keluar dari navbar */
+}
+
+#navbar #logo {
+	float: left; /* Menempatkan logo di kiri navbar dan memberi warna putih agar terlihat terang */
+	color: white;
+	padding-top: 14px;
+}
+
+#navbar ul {
+	float: right;
+	list-style-type: none; /* Mengatur navigasi agar sejajar ke kanan dan menghilangkan bullet point. */
+}
+
+#navbar ul li {
+	float: left; /* Menjadikan item navigasi sejajar secara horizontal. */
+}
+
+#navbar ul li a { /* Mengatur link dalam navbar agar terlihat lebih rapih */
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #f4f4f4; 
+	padding: 20px;
+}
+
+#navbar ul li a.current, #navbar ul li a:hover {
+	color: #f7c08a; /* Saat di-hover, warna link berubah menjadi emas muda (#f7c08a) untuk efek visual yang menarik */
+	background-color: #454545; 
+}
+
+#showcase { /* bagian dari header */
+	background-image: url('room1.jpg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 160px;
+} /* Membuat bagian showcase dengan gambar latar belakang ruangan dan teks di tengah */
+
+#showcase h2 {
+	font-size: 4em;
+	color: white;
+	padding-bottom: 10px;
+} /* Membuat teks judul besar dan warna putih agar lebih mencolok. */
+
+#showcase h2 strong {
+	color: #f7c08a;
+} /* Memberikan efek emas muda pada bagian yang lebih penting. */
+
+#showcase h3 {
+	color: white;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+#showcase-btn {
+	color: white;
+	background-color: #353535; 
+	margin: 30px auto 10px auto;
+	cursor: pointer;
+} /* Tombol yang berwarna abu-abu gelap dengan teks putih */
+
+#showcase-btn:hover {
+	color: #353535;
+	background-color: #f7c08a;
+} /* Saat tombol di-hover, warna berubah jadi emas muda agar terlihat lebih interaktif */
+
+#section-one {
+	width: 100%;
+	height: 400px;
+} /* Mengatur ukuran bagian sejarah agar sejajar dengan elemen lain */
+
+#section-one #img {
+	float: left;
+	width: 50%;
+	background: url('photo-1.jpg') no-repeat center center/cover;
+	min-height: 100%;
+} /* Menampilkan gambar latar dengan ukuran setengah dari layar */
+
+#section-one #the-history {
+	float: right;
+	width: 50%;
+	text-align: center;
+	background-color: #353535;
+	padding: 50px 30px;
+	min-height: 100%;
+} /* Bagian teks sejarah dengan warna latar gelap agar kontras dengan teks putih */
+
+#section-one #the-history h4 {
+	padding-bottom: 20px;
+	font-size: 1.6em;
+	color: white;
+}
+
+#section-one #the-history h4 strong {
+	padding-top: 40px;
+}
+
+#section-one #the-history p {
+	color: white;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1160px) {
+	#section-one #the-history { 
+		padding: 30px 25px;
+	}
+	#section-one #the-history p {
+		font-size: 14px;
+	}
+}
+
+#section-one #the-history-btn {
+	color: #353535;
+	background-color: #f9f9f9; 
+	margin: 40px auto 10px auto;
+	cursor: pointer;
+}
+
+#section-one #the-history-btn:hover {
+	background-color: #f7c08a;
+}
+
+#section-two {
+	clear: both;
+}
+
+.section-two-box {
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	color: #353535;
+	background-color: #f4f4f4;
+	padding: 50px 40px 60px 40px;
+} /*  Membagi section menjadi tiga kolom untuk menampilkan fitur layanan */
+
+.section-two-box:nth-of-type(2) {
+	background-color: #f7c08a;
+}
+/* Memberikan warna emas muda hanya pada kolom kedua agar lebih menarik */
+
+.section-two-box h5 {
+	font-size: 1.2em;
+	padding: 10px 0 20px 0;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	color: white;
+	background-color: #202040;
+	text-align: center;
+	padding: 30px;
+}
+/* Bagian footer dengan navy */
+
+/* About Page Styling */
+main {
+	background-color: #f4f4f4;
+}
+
+#about {
+	border: 1px solid #ccc;
+}
+
+#about-content {
+	float: left;
+	width: 50%;
+	padding-top: 25px;
+}
+/* Bagian informasi tentang hotel yang sejajar dengan gambar di sebelah kanan */
+
+#about-content h2 {
+	font-size: 2.5em;
+	color: #353535;
+}
+
+#about-content p {
+	color: #252525;
+	padding: 8px 0;
+}
+
+#about img {
+	float: right;
+	display: block;
+	width: 40%;
+	border-radius: 40%;
+	padding: 30px 20px;
+} /* Menampilkan gambar profil dengan sudut bulat biar aesthetic */
+
+#guests-say {
+	clear: both;
+	min-height: 600px;
+	background: url('bg.jpg') center center/cover;
+	padding: 80px 0;
+}
+
+#guests-say h3 {
+	text-align: center;
+	color: white;
+	font-size: 2.7em;
+}
+
+#guests-say .guest-comment {
+	clear: both;
+	width: 100%;
+	background-color: #f7c08a;
+	border-radius: 10px;
+	min-height: 140px;
+	margin: 30px 0;
+	opacity: 0.9;
+}
+
+#guests-say .guest-comment img {
+	display: block;
+	float: left;
+	width: 10%;
+	border-radius: 50%;
+	margin: 15px 30px;
+}
+
+#guests-say .guest-comment p {
+	float: right;
+	width: 80%;
+	color: #353535;
+	text-align: left;
+	margin: 25px 30px 25px 0px;
+}
+
+@media screen and (max-width: 980px) {
+	#guests-say .guest-comment p {
+		font-size: 15px;
+		float: right;
+		margin: 15px 15px 15px 0px;
+	}
+}
+
+/* Contact Page Styling */
+#main-contact {
+	background-color: white;
+}
+
+#contact {
+	padding: 25px 0 35px 0;
+}
+
+#contact h2 {
+	font-size: 2.5em;
+	color: #353535;
+	margin-bottom: 12px;
+}
+
+#contact .form-group label {
+	display: block;
+	margin: 15px 0 5px 0;
+	color: #252525;
+}
+
+#contact .form-group input, 
+#contact .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+/* Formulir kontak dengan input yang luas dan border halus */ 
+
+#contact .form-group textarea {
+	height: 200px;
+}
+
+#contact .form-group input:focus, 
+#contact .form-group textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#contact #form-btn {
+	color: white;
+	background-color: #353535; 
+	margin: 30px auto 10px auto;
+	cursor: pointer;
+	border: 0;
+	margin: 30px 0 10px 0;
+}
+/* Tombol submit untuk formulir dengan warna gelap agar lebih formal */
+
+#contact #form-btn:hover {
+	color: #202040;
+	background-color: #f7c08a;
+}
+/* Warna berubah saat di-hover agar lebih menarik. */
+
+#informations {
+	background-color: #202040;
+	padding: 45px 0;
+}
+
+#informations .information-box {
+	float: left;
+	width: 33.333%;
+	color: white;
+	text-align: center;
+}
+
+#informations .information-box h3 {
+	margin: 12px 0 24px 0;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> <!--bahasa utama dalam website adalah inggris-->
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="uprak.css"> <!--menghubungkan halaman utama ke file CSS-->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:  860px)" href="mobile.css"> <!--menghubungkan file CSS khusus yang digunakan ketika ukuran layar maximal 860 pixel agar tampilan lebih responsif di perangkat kecil-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> <!--menghubungkan ke font awesome yaitu pustaka ikon-->
+	<title>Hotel RC | Where Comfort Begins</title> <!--judul yang nanti ada di website-->
+</head>
+<body>
+	<header> <!--bagian atas yang ada navigasi-->
+		<nav id="navbar"> <!--biar ada navbar lalu bisa pindah halaman-->
+			<div class="container"> <!--menampilkan nama hotel sebagai logo nya-->
+				<h1 id="logo">RC</h1>
+				<ul> <!--membuat daftar menu navigasi-->
+					<li><a href="uprakinformatika.html" class="current">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section id="showcase"> <!--bagian utama yang menampilkan sambutan hotel-->
+			<div class="container">
+				<h2><strong class="primary-text">Enjoy</strong> Your Stay</h2> <!--slogan utama-->
+				<h3>Welcome to RC Hotel, Jakarta luxury 5-star hotel, filled with exceptional design, a hand-picked art collection and refined British elegance.</h3> <!--dekripsi singkat ttg hotel-->
+				<a href="about.html" id="showcase-btn" class="btn">About Us</a> <!--tombol untuk ke about us-->
+			</div>
+		</section>
+	</header>
+	<main>
+		<section id="section-one"> <!--bagian yang menampilkan sejarah hotel-->
+			<div id="img"></div> <!--bagian yang kosong di HTML tetapi akan ada gambar melalui CSS-->
+			<div id="the-history">
+				<h4><strong class="primary-text">History</strong> Of Our Hotel</h4>
+				<p>The District 8 Jakarta project by Reuven Caleb Group was built in stages between 2008 and 2021 and cost around IDR 10 trillion. RC Hotel, Jakarta is one of the last projects to be worked on, with the inauguration taking place on September 9, 2021. RC Hotel, Jakarta is managed by RC Hospitality Group, a Hong Kong hotel chain that began its history with the RC Hotel in London. The hotel building was designed by PT Airmas Asri and Forrec, while Caleb, Presley, Brafa, Eugene served as interior designers.</p>
+				<a href="about.html" id="the-history-btn" class="btn">About Us</a>
+			</div>
+		</section>
+		<section id="section-two"> <!--baigan keunggulan dari hotel ini-->
+			<div class="section-two-box"> <!--tiap bagian berisi keunggulan hotel-->
+				<i class="fas fa-hotel fa-3x"></i> <!--menampilkan ikon yang sesuai dengan fitur hotel yaitu ikon hotel, peralatan makan, barbel-->
+				<h5>Strategic Location</h5>
+				<p>Nestled within the prestigious complex of District 8 in Sudirman Central Business District, RC Hotel, Jakarta is in close proximity to the city’s most important financial, cultural and entertainment centres.</p>
+			</div>
+			<div class="section-two-box">
+				<i class="fas fa-utensils fa-3x"></i>
+				<h5>Free Food</h5>
+				<p>Breakfast, lunch or snacks? We prepare delicious complimentary meals to accompany your relaxing time at our hotel.</p>
+			</div>
+			<div class="section-two-box">
+				<i class="fas fa-dumbbell fa-3x"></i>
+				<h5>Fitness Centre</h5>
+				<p>Located on the 60rd floor, our state-of-the-art Health Club helps you stay in shape even while you're away from home. Unwind with our Technogym cardio equipment, a comprehensive range of free weights, and a relaxation area with refreshments.
+                    Our friendly staff are also happy to provide round-the-clock assistance, and experienced personal trainers are available upon request.</p>
+			</div>
+		</section>
+	</main>
+	<footer> <!--bagian bawah halaman yang berisi hak cipta-->
+		<p>Hotel RC © 2025, All Rights Reserved</p>
+	</footer>
+</body>
+</html>

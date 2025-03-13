@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> <!--memastikan karakter yang digunakan untuk mendukung karakter dan simbol-->
+	<link rel="stylesheet" type="text/css" href="uprak.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:  768px)" href="mobile.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> <!--menghubungkan ke font awesome-->
+	<title>Hotel RC | Where Comfort Begins</title>
+</head>
+<body>
+	<header> <!--bagian kepala halaman yang berisi logo dan menu navigasi-->
+		<nav id="navbar"> <!--navigasi utama yang memungkinan user buat pindah halaman-->
+			<div class="container"> <!--mengelompokan dan mengatur tata elemen di website-->
+				<h1 id="logo">RC </h1>
+				<ul>
+					<li><a href="uprakinformatika.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html" class="current">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main id="main-contact"> <!--bagian utama halaman yang berisi formulir dari contact us-->
+		<div class="container">
+			<section id="contact">
+				<h2><strong class="primary-text">Contact</strong> Us</h2>
+				<p>Please fill out the form below to contact us.</p>
+				<form action="https://forms.gle/Nbu8m9uaEby5PY8Q6" method="POST" target="_blank"></form> <!--form mengirimkan data ke google form-->
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" name="name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" name="email">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea name="message"></textarea>
+					</div>
+					<button type="submit" id="form-btn" class="btn">Send Message</button>
+				</form>
+			</section>
+		</div>
+		<section id="informations"> <!--bagian khusus untuk informasi kontak tabel -->
+			<div class="container">
+				<div class="information-box">
+					<i class="fas fa-hotel fa-3x"></i> <!--ikon hotel buat lokasi-->
+					<h3>Location</h3>
+					<p>Sudirman Central Business District 8 Lot.28, Senayan</p>
+				</div>
+				<div class="information-box">
+					<i class="fas fa-phone fa-3x"></i> <!--ikon telepon untuk nomor telepon-->
+					<h3>Telephone</h3>
+					<p>(021) 27087888</p>
+				</div>
+				<div class="information-box">
+					<i class="fas fa-envelope fa-3x"></i> <!--ikon email untuk alamat email-->
+					<h3>Email</h3>
+					<p>reuven.caleb8@gmail.com</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer> <!--hak cipta-->
+		<p>RC Hotel © 2025, All Rights Reserved</p>
+	</footer>
+</body>
+</html>

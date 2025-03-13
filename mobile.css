@@ -1,0 +1,117 @@
+/* Home Page Styling */
+#navbar #logo {
+	float: none; /* logo tidak akan mengapung */
+	text-align: center; /* logo navbar akan ditampilkan di tengah */
+	padding: 15px 0 15px 0;
+}
+
+#navbar ul {
+	float: none;
+
+}
+
+#navbar ul li {
+	float: none;
+	border-bottom: 1px solid #454545; /* menambahkan garis bawah item dengan wanra abu2 */
+}
+
+#navbar ul li a {
+	padding: 6px; /* memberikan padding 6 pixel pada setiap link di dalam navbar */
+}
+
+#showcase {
+	min-height: 340px; /* bagian showcase memiliki minimal tinggi 340 pixel */
+	padding-top: 40px; /* padding atas 40 pixel */ 
+	padding-bottom: 30px; /* padding bawah 30 pixel */
+}
+
+#showcase h2 {
+	font-size: 3.5em; /* ukuran teks di h2 sebesar 3.5 em */
+	padding-bottom: 8px; /* memberi padding 8 pixel di bagian bawah biar memberi ruang pada teks */
+}
+
+#section-one {
+	height: 380px; /* tinggi nya 380 pixel secara default */
+}
+
+@media screen and (max-width: 560px) { /* kalau layar lebih kecil dair 560 pixel maka tinggi section one menjadi 460 pixel untuk repon */
+	#section-one {
+		height: 460px;
+	}
+}
+
+#section-one #img { /* gambar tidak akan ditampilkan */
+	display: none;
+}
+
+#section-one #the-history { 
+	float: none; /* tidak akan mengapung */
+	width: 100%; /* lebarnya 100% agar memenuhi kontainer */
+	padding: 25px 30px; /* memberikan 25 pixel atas dan bawah serta 30 pixel kiri dan kanan */
+}
+
+#section-one #the-history p {
+	font-size: 15px;
+}
+
+.section-two-box {
+	float: none; /* tidak akan mengapung */
+	width: 100%; /* lebarnya 100% */ 
+	padding: 50px 40px 60px 40px; /* Memberikan padding 50px atas, 40px kanan, 60px bawah, 40px kiri */
+}
+
+/* About Page Styling */
+#about-content {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+
+#about img {
+	float: none;
+	width: 60%; /* lebarnya 60% dari kontainer */
+	padding: 30px 20px; /* memberikan 30 pixel atas dan bawah serta 20 pixel kiri dan kanan */
+	margin: 0 auto; /* ditampilkan ditengah */
+}
+
+#guests-say h3 {
+	font-size: 2.4em; /* ukuran font heading di bagian testiomoni adalah 2.4 em */
+}
+
+#guests-say .guest-comment {
+	min-height: 150px; /* masing - masing komentar tinggi minimum nya 150 pixel */
+	margin: 25px 0; /* jarak antara komentar adalah 25 pixel */
+	padding: 20px; /* padding nya 20 pixel */
+}
+
+#guests-say .guest-comment img {
+	float: none;
+	width: 120px;
+	margin: 10px auto; /* margin atas 10 pixel dan ditampilkan ditengah */
+}
+
+#guests-say .guest-comment p {
+	float: none;
+	width: 90%;
+	margin: 25px auto; /* ditampilkan di tengah */
+	text-align: center;
+	font-size: 15px;
+}
+
+/* Contact Page Styling */
+#informations {
+	background-color: #353535; /* latar belakang nya warna abu abu gelap */
+	padding: 20px 0; /* padding atas dan bawah 20 pixel */
+}
+
+#informations .information-box {
+	float: none;
+	width: 100%;
+	border-bottom: 1px solid #454545; /* Menambahkan garis bawah antar kotak informasi dengan warna #454545 */
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+#informations .information-box:last-child {
+	border-bottom: none; /* Menghapus garis bawah pada kotak informasi terakhir */
+}
